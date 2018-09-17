@@ -1,6 +1,9 @@
 {
     "name": "saddleos",
     "author": "Pantheon",
+    "scripts": {
+        "start": "electron root/start.js"
+    },
     "dependencies": {
         "electron": "^2.0.9"
     }

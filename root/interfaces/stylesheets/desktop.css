@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+}
+.desktop-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: url("../../default/wallpaper.jpg");
+    background-size: 100%;
+}
+.desktop {
+    flex-grow: 1;
+}
+.desktop-taskbar {
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: row;
+}
+
+.taskbar-app-icon {
+    background-color: rgb(179, 179, 179);
+    -webkit-mask-image: url("../../default/icons/menu.svg");
+    mask-image: url("../../default/icons/menu.svg");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 40%;
+    mask-size: 40%;
+    -webkit-mask-position: center;
+    mask-position: center;
+
+    width: 40px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.taskbar-app-icon:hover {
+    background-color: rgb(255, 255, 255);
+}
+.taskbar-icons {
+    flex-grow: 1;
+}
+.taskbar-clock {
+    vertical-align: baseline;
+    color: white;
+    padding: 0px 20px;
+}
+.taskbar-clock > span {
+    margin-top: 10px;
+    display: inline-block;
+}
