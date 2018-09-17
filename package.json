@@ -1,0 +1,7 @@
+{
+    "name": "saddleos",
+    "author": "Pantheon",
+    "dependencies": {
+        "electron": "^2.0.9"
+    }
+}
